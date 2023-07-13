@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="login-form">
+      <div id="login-head">
+        <h1>ACCESO</h1>
+      </div>
+      <div id="login-details">
+        <form action="" onsubmit="myfunc(event)">
+          <div id="user">
+            <input type="text" name="name" id="full_name" placeholder="Username" />
+          </div>
+
+          <div id="pass">
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+
+          <div id="submit">
+           <button type="submit" onclick="capturar()"><a href="./tienda.html">INGRESAR</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function myfunc(event) {
+        event.preventDefault();
+
+        var full_name = document.getElementById("full_name").value;
+        var email = document.getElementById("email").value;
+        localStorage.setItem("ls_full_name", full_name);
+        localStorage.setItem("ls_email_id", email);
+      }
+      function capturar(){
+        var nameUser  = document.getElementById("full_name").value;
+        alert("Hola "+nameUser+" Bienvenido")
+      }
+    </script>
+  </body>
+</html>

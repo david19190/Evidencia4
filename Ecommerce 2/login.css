@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: ivory;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+}
+#login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(#0b111a, #111b28);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px #0dc8f4;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 0.2em;
+}
+#login-head {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #0dc8f4;
+  text-shadow: 0 0 0.28rem#0DC8F4;
+}
+#login-details {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+label {
+  font-family: "Inter", sans-serif;
+}
+#user input {
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 1.2rem;
+  width: 100%;
+  color: white;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  padding: 0.3rem;
+  transition: 0.5s;
+  letter-spacing: 0.1em;
+  outline: none;
+}
+#user input:hover {
+  box-shadow: 0 0 2em 0 #0dc8f4;
+}
+
+#pass {
+  margin-top: 1rem;
+}
+#pass input {
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 1.2rem;
+  width: 100%;
+  color: white;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  padding: 0.3rem;
+  transition: 0.5s;
+  letter-spacing: 0.1em;
+  outline: none;
+}
+#pass input:hover {
+  box-shadow: 0 0 2em 0 #0dc8f4;
+}
+
+#submit {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-left: 3%;
+}
+#submit button {
+  padding: 1.1rem;
+  color: #0dc8f4;
+  background-color: transparent;
+  border: solid 2px #0dc8f4;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  border-radius: 0.25em;
+  transition: 0.5s;
+  text-shadow: 0 0 0.125em white, 0 0 0.25 currentColor;
+  text-shadow: 0 0 0.2rem #0dc8f4;
+  cursor: pointer;
+}
+#submit button:hover {
+  background: #0dc8f4;
+  color: white;
+  box-shadow: 1px 0 3.5em 0 #0dc8f4;
+  text-shadow: 0 0 0.2rem white;
+}
